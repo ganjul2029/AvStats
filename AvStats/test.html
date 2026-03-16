@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid #333;
+  padding: 12px;
+  position: relative;
+}
+
+tr:hover {
+  background: #eef;
+}
+
+/* popup container */
+.popup {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #333;
+  padding: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 10;
+}
+
+/* show popup when hovering the cell */
+td.image-cell:hover .popup {
+  display: block;
+}
+</style>
+</head>
+
+<body>
+
+<table>
+<tr>
+  <td>Normal cell</td>
+
+  <td class="image-cell">
+    This cell has text. Hover anywhere here.
+    <div class="popup">
+      <img src="https://via.placeholder.com/200">
+    </div>
+  </td>
+
+  <td>Normal cell</td>
+</tr>
+</table>
+
+<form action="mailto:ganjul2029@student.cranbrook.nsw.edu.au?subject=TEST" method="post">
+<label>Name:</label>
+<input type="text" id="name" name="name" value="JUSTIN">
+</br></br>
+
+<input type="submit" value="Generate email">
+<input type="reset" value="Clear">
+
+</form>
+
+</body>
+</html>

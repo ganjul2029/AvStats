@@ -1,0 +1,242 @@
+/*Image Margining and Adjustment*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+}
+
+/*Font Assignment*/
+h1 {
+    font-family: "Montserrat";
+    font-weight: 200;
+    font-size: 35px;
+    font-style: b;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: "Montserrat";
+    font-weight: 200;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: "Montserrat";
+    font-weight: 200;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+p {
+    font-family: "Montserrat";
+    font-weight: 200;
+    font-size: 18px;
+}
+
+li {
+    font-family: "Montserrat";
+    font-weight: 200;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Banner */
+.top-banner {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    width: 100%;
+    background: #0b1f3a;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 30px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+/*Navigation Menu*/
+.nav-menu {
+    list-style: none;
+    display: flex;
+    background: #132a4f;
+    border-radius: 14px;
+    padding: 5px;
+}
+
+.nav-menu li {
+    padding: 10px 18px;
+    border-radius: 10px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-menu li:hover {
+    background: #1e3a5f;
+}
+
+.nav-menu .active {
+    background: #2f5aa8;
+}
+
+
+/* Hero/Banner Image*/
+.hero {
+    width: 100%;
+    height: 220px; /* fixed height */
+    overflow: hidden; /* crops any overflow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    line-height: 0;
+}
+
+.hero img {
+    width: 100%;       /* stretches across screen */
+    height: auto;      /* so it doesn't image warp */
+    min-height: 100%;  /* like forces the height */
+    object-fit: cover; /* crops the image when needed */
+}
+
+/* Table styling - This is for actual statistics */
+table {
+    width: 95%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 20px 0;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 0px solid #dcdcdc;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding: 10px;
+}
+
+.hover-table {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 10px;
+}
+
+.hover-table:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Table Hover pop */
+
+
+
+/* Making the table scroll on its own */
+.table-scroll {
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: visible;
+    position: relative;
+    border: 0px solid #dcdcdc;
+    border-radius: 12px;
+    padding-bottom: 120px;
+}
+
+/* Header Row */
+th {
+    background-color: #e6e6e6;
+    font-weight: bold;
+    padding: 0px;
+    text-align: left;
+    font-family: Montserrat;
+    border-top: 0px solid #eeeeee;
+    border-left: 0px solid #eeeeee;
+}
+
+/* Normal cells */
+td {
+    padding: 0px;
+    border-top: 0px solid #eeeeee;
+    border-left: 0px solid #eeeeee;
+    font-family: Montserrat;
+}
+
+/*Banner separation thingo */
+.company-banner {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0b1f3a;
+    margin: 40px 0 20px 0;
+}
+
+.company-banner img {
+    height: 50px; 
+    width: auto;
+    object-fit: contain;
+    margin: 0;
+}
+
+/* IDK? I did this so that then each company more distinctive */
+.airbus-banner {
+    background-color: #00205B; /* Airbus Blue */
+}
+
+.boeing-banner {
+    background-color: #0039A6; /* Boeing Blue */
+}
+
+button {
+  background-color: #132a4f;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer; 
+  border-radius: 12px;
+  font-family: Montserrat;
+  font-weight: bold;
+  color: white;
+}
+
+button:hover {
+ background-color: #2f5aa8;
+ color: white;
+}
+
+/* Google Forms */
+iframe {
+  display: block;
+  margin: 0 auto; 
+}
+
+.footer {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #0b1f3a;
+    margin: 40px 0 20px 0;
+}
